@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Profile UI</title>
+<link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <button class="close-btn" onclick="window.parent.postMessage('closeProfileDrawer', '*')">✖</button>
+  <div class="profile-title">PROFILE</div>
+</div>
+
+<!-- Profile Info -->
+<div class="profile-info">
+  <div class="avatar"><img src="./img/profilelogo.jpg" alt="profile"></div>
+  <div class="name">John Elter</div>
+  <button class="edit-button">Edit</button>
+</div>
+
+<!-- Sleep Information Card -->
+<div class="sleep-info">
+  <div class="sleep-row">
+    <div>
+      <span class="sleep-icon">🌙</span>
+      <strong>Sleep information</strong>
+    </div>
+  </div>
+  <div class="sleep-row">
+    <div>
+      <span class="sleep-icon">🌙</span>
+      6h 34m Deep Sleep
+    </div>
+    <div>
+      <span class="sleep-icon">🛌</span>
+      12m Falling asleep
+    </div>
+  </div>
+  <div class="sleep-row">
+    <div>
+      <span class="sleep-icon">🕙</span>
+      10:14 PM Going to bed
+    </div>
+    <div>
+      <span class="sleep-icon">🌅</span>
+      8:11 AM Waking up
+    </div>
+  </div>
+</div>
+
+<!-- Stress Card -->
+<div class="card">
+  <div class="card-header">
+    <div>😊</div>
+    <div>
+      <div><strong>Stress</strong></div>
+      <div>Medium. Low Stress</div>
+    </div>
+  </div>
+</div>
+
+<!-- Screen Time Card -->
+<div class="card">
+  <div class="card-header">
+    <div>📱</div>
+    <div>
+      <div><strong>Screen Time</strong></div>
+      <div>4 hr goal. 6 hr recently</div>
+    </div>
+  </div>
+</div>
+
+<!-- Info Box -->
+<div class="info-box">
+  <div class="info-icon">⚠️</div>
+  <div>Keeping a consistent routines helps to improve sleep and reduce stress.</div>
+</div>
+
+<script>
+  // Optional: For accessibility, allow ESC key to close drawer
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      window.parent.postMessage('closeProfileDrawer', '*');
+    }
+  });
+
+  window.addEventListener('message', function(event) {
+    if (event.data === 'closeProfileDrawer') {
+      drawer.classList.remove('open');
+      backdrop.classList.remove('active');
+    }
+  });
+</script>
+
+</body>
+</html>

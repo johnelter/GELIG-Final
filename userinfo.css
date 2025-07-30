@@ -1,0 +1,326 @@
+/* Reset and base */
+    * {
+      box-sizing: border-box;
+    }
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-color: #001f3f;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 40px;
+    }
+
+    /* Container */
+    .container {
+      width: 1500px;
+      background-color: #5f6f8a;
+      border-radius: 20px 20px 20px 20px;
+      padding: 1.5rem 2rem 2.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      color: #000d14;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      position: relative;
+    }
+
+    /* Logo wrapper */
+    .logo-wrap {
+      background-image: url('./img/logo.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 50%;
+      width: 130px;
+      height: 130px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: -70px auto 20px auto;
+      box-shadow: 0 0 0 8px #3c4070;
+      flex-shrink: 0;
+    }
+
+    /* Eye icon with layered arcs in SVG */
+    .logo-wrap svg {
+      width: 70px;
+      height: 70px;
+      fill: #a7a9d0;
+      stroke: #989abe;
+      stroke-width: 1.5;
+    }
+
+    /* Logo text beneath eye */
+    .logo-text {
+      font-size: 30px;
+      font-weight: 600;
+      color: white;
+      margin-top: 168px;
+      letter-spacing: 1.3px;
+      user-select: none;
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Heading area */
+    .heading {
+      text-align: center;
+      margin-bottom: 10px;
+      user-select: none;
+    }
+    .heading h1 {
+      font-weight: 900;
+      font-size: 1.35rem;
+      margin: 0 0 0.4rem 0;
+      color: black;
+      line-height: 1.2;
+    }
+    .heading p {
+      margin: 0;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: #000d14;
+      opacity: 0.9;
+    }
+
+    /* Form styling */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      user-select: none;
+    }
+
+    /* Label and input container (flex column) */
+    label {
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-bottom: 0.3rem;
+      color: #000d14;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 0.6rem 0.75rem;
+      border-radius: 8px;
+      border: 1px solid #000d14;
+      font-size: 0.95rem;
+      font-weight: 500;
+      outline-offset: 2px;
+      user-select: text;
+    }
+
+    input[type="text"]::placeholder,
+    input[type="number"]::placeholder {
+      font-weight: 400;
+      color: #506070;
+    }
+
+    /* Gender buttons container */
+    .gender-container {
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    /* Gender buttons */
+    .gender-btn {
+      flex: 1;
+      background-color: black;
+      color: white;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 0.52rem 0;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+      user-select: none;
+      transition: background-color 0.25s ease;
+      text-align: center;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .gender-btn:hover,
+    .gender-btn:focus {
+      background-color: #222222;
+      outline: none;
+    }
+
+    /* Next button at bottom right */
+    .btn-next {
+      margin-top: auto;
+      align-self: flex-end;
+      font-weight: 800;
+      font-size: 1.1rem;
+      cursor: pointer;
+      user-select: none;
+      color: black;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      border: none;
+      background: transparent;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      transition: color 0.25s ease;
+    }
+    .btn-next:hover {
+      color: #23295c;
+    }
+    .btn-next svg {
+      stroke: black;
+      stroke-width: 3;
+      transition: stroke 0.25s ease;
+    }
+    .btn-next:hover svg {
+      stroke: #23295c;
+    }
+
+    @media screen and (max-width: 1200px){
+        .container {
+            width: 800px;
+            padding: 1.5rem;
+        }
+        .logo-wrap {
+            width: 90px;
+            height: 90px;
+        }
+        .logo-wrap svg {
+            width: 60px;
+            height: 60px;
+        }
+        .logo-text {
+            font-size: 24px;
+            margin-top: 140px;
+        }
+    }
+
+@media screen and (max-width: 760px) {
+  /* Reset and base */
+  * {
+    box-sizing: border-box;
+  }
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #001f3f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 40px;
+  }
+
+  /* Container */
+  .container {
+    width: 100%;
+    background-color: #5f6f8a;
+    border-radius: 20px;
+    padding: 1.5rem 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #000d14;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    position: relative;
+  }
+
+  /* Logo wrapper */
+  .logo-wrap {
+    background-image: url('./img/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -60px auto 16px auto;
+    box-shadow: 0 0 0 6px #3c4070;
+    flex-shrink: 0;
+  }
+
+  .logo-wrap svg {
+    width: 60px;
+    height: 60px;
+    fill: #a7a9d0;
+    stroke: #989abe;
+    stroke-width: 1.5;
+  }
+
+  .logo-text {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    margin-top: 140px;
+    letter-spacing: 1.2px;
+    text-align: center;
+  }
+
+  .heading {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .heading h1 {
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+    color: black;
+    line-height: 1.2;
+  }
+
+  .heading p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #000d14;
+    opacity: 0.9;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  label {
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  select {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .gender-container {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .gender-btn {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+  }
+
+  .btn-next {
+    font-size: 1rem;
+    gap: 5px;
+  }
+
+  .btn-next svg {
+    stroke-width: 2.5;
+  }
+}
+

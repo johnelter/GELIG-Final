@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info</title>
+    <link rel="stylesheet" href="userinfo.css">
+</head>
+<body>
+    <div class="container">
+    <div class="logo-wrap" aria-label="ShutEye logo with stylized eye icon and layered arcs.">
+      <span class="logo-text">SHUTEYE</span>
+    </div>
+
+    <header class="heading">
+      <h1>Tell me about yourself</h1>
+      <p>We'll create a better sleep plan for you</p>
+    </header>
+
+    <form novalidate>
+      <label for="username">Username</label>
+      <input id="username" type="text" placeholder="Username" autocomplete="off" />
+
+      <label for="age">Age</label>
+      <input id="age" type="number" min="1" max="120" value="20" />
+
+      <label for="sleep-hours">Preffered Hours of Sleep</label>
+      <input id="sleep-hours" type="text" placeholder="7 hours" autocomplete="off" />
+
+      <label for="hobbies">Hobbies</label>
+      <select id="hobbies" aria-label="Select hobbies">
+        <option value="" disabled selected>Select Hobbies</option>
+        <option value="reading">Reading</option>
+        <option value="sports">Sports</option>
+        <option value="gaming">Gaming</option>
+        <option value="music">Music</option>
+        <option value="cooking">Cooking</option>
+        <option value="travel">Travel</option>
+      </select>
+
+      <label for="tech-level">Tech Level</label>
+      <select id="tech-level" aria-label="Select tech level">
+        <option value="" disabled selected>Select Level</option>
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select>
+
+      <label>Gender</label>
+      <div class="gender-container" role="radiogroup" aria-label="Gender selection">
+        <button type="button" class="gender-btn" aria-pressed="false">Male</button>
+        <button type="button" class="gender-btn" aria-pressed="false">Female</button>
+      </div>
+    </form>
+
+    <button class="btn-next" aria-label="Next Step" onclick="location.href='home.html'">
+      Dashboard
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" role="img">
+        <path d="M8 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+  </div>
+</body>
+</html>
