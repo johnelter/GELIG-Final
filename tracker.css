@@ -103,10 +103,7 @@ body {
 .info-label {
     display: flex;
     align-items: center;
-}
-
-.info-label svg {
-    margin-right: 8px;
+    font-size: 15px;
 }
 
 /* Sleep Now button */
@@ -247,6 +244,7 @@ body {
   .info-label {
     display: flex;
     align-items: center;
+    font-size: 15px;
   }
 
   .info-label svg {

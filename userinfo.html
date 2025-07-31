@@ -19,10 +19,10 @@
 
     <form novalidate>
       <label for="username">Username</label>
-      <input id="username" type="text" placeholder="Username" autocomplete="off" />
+      <input id="username" type="text" placeholder=" " autocomplete="off" />
 
       <label for="age">Age</label>
-      <input id="age" type="number" min="1" max="120" value="20" />
+      <input id="age" type="number" min="1" max="120" value=" "/>
 
       <label for="sleep-hours">Preffered Hours of Sleep</label>
       <input id="sleep-hours" type="text" placeholder="7 hours" autocomplete="off" />
@@ -53,12 +53,11 @@
       </div>
     </form>
 
-    <button class="btn-next" aria-label="Next Step" onclick="location.href='home.html'">
-      Dashboard
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" role="img">
-        <path d="M8 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" />
-      </svg>
-    </button>
+    <div style="display: flex; justify-content: center; margin-top: 24px;">
+      <button class="btn-save" aria-label="Save and go to Dashboard" onclick="location.href='home.html'">
+        Save
+      </button>
+    </div>
   </div>
 </body>
 </html>
