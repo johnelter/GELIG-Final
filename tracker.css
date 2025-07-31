@@ -221,14 +221,14 @@ body {
   }
 
   .circle img {
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 70%;
     object-fit: cover;
   }
 
   /* Sleep info boxes */
   .info-box {
-    width: 100%;
+    width: 70%;
     max-width: 500px;
     background-color: #add8e6;
     border-radius: 10px;
@@ -283,12 +283,17 @@ body {
     flex-direction: column;
     align-items: center;
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
     cursor: pointer;
   }
 
   .nav-icon {
     font-size: 24px;
     margin-bottom: 4px;
+  }
+
+  .nav-icon img {
+    width: 24px;
+    height: 24px;
   }
 }
